@@ -1,0 +1,272 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;sss
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #00000036 0%, #bfcb11 100%);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 25px;
+    background: #f8faf842;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #4ae08d;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #49505759;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.instructions {
+    color: #6c757d;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Form Styles */
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: #4a6ee0;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 110, 224, 0.1);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: block;
+    min-height: 20px;
+}
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4a6ee0 0%, #6a11cb 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(106, 17, 203, 0.4);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Results Styles */
+.results {
+    margin-top: 25px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid #4a6ee0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.results h3 {
+    color: #4a6ee0;
+    margin-top: 0;
+}
+
+.results p {
+    margin-bottom: 10px;
+}
+
+/* Grade Table Styles */
+.grade-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+ 
+.grade-table th {
+    background: linear-gradient(135deg, #4a6ee0 0%, #6a11cb 100%);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.grade-table td {
+    padding: 15px;
+    border-bottom: 1px solid hsl(210, 16%, 93%);
+}
+
+.grade-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Grade Color Styles */
+.grade-Aplus {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.grade-A {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.grade-Bplus {
+    color: #9b59b6;
+    font-weight: bold;
+}
+
+.grade-B {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.grade-Cplus {
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+.grade-C {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.grade-D {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background: #343a40;
+    color: rgba(255, 255, 255, 0.308);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    body {
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
