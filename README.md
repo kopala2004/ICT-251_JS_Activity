@@ -36,6 +36,6 @@ A web application that solves quadratic equations and converts numerical scores 
 - JavaScript (ES6+)
 
 ## Author
-[Your Name]
+[MR WILFRED LUNGO]
 ICT251 Web Technologies
 Due: October 23, 2025
